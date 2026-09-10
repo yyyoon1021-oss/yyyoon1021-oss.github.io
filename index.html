@@ -11,24 +11,69 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
-    <article class="sheet">
-      <header class="hero">
-        <p class="eyebrow">서울대학교 첨단융합학부</p>
-        <h1>윤예영</h1>
-        <p class="lede">26학번</p>
-      </header>
 
-      <section class="block">
-        <h2>관심사</h2>
-        <ul class="stickers">
-          <li class="sticker sticker--purple">융합데이터과학</li>
-          <li class="sticker sticker--teal">지속가능기술</li>
-        </ul>
-      </section>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">윤예영</a>
+      <nav class="nav__links">
+        <a href="#interests">관심사</a>
+        <a href="#contact">연락처</a>
+      </nav>
+    </div>
+  </header>
 
-      <section class="block">
-        <h2>연락처</h2>
+  <main id="top">
+
+    <!-- 히어로 -->
+    <section class="hero">
+      <div class="shell">
+        <p class="eyebrow">서울대학교 첨단융합학부 · 26학번</p>
+        <h1 class="display">윤예영</h1>
+        <p class="lede">
+          융합데이터과학과 지속가능기술에 관심이 있습니다.
+        </p>
+        <div class="cta">
+          <a class="btn btn--primary" href="mailto:yeyoung1021@snu.ac.kr">이메일 보내기</a>
+          <a class="btn btn--ghost" href="https://github.com/yyyoon1021-oss">GitHub 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 관심사 -->
+    <section class="band" id="interests">
+      <div class="shell">
+        <p class="sect__num">01 — INTERESTS</p>
+        <h2 class="sect__title">관심사</h2>
+        <p class="sect__lede">
+          지금 가장 오래 들여다보고 있는 두 가지입니다.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__chip card__chip--purple"></div>
+            <div class="card__body">
+              <h3>융합데이터과학</h3>
+              <p>데이터를 다루는 방법과 그것을 다른 분야에 잇는 일</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__chip card__chip--teal"></div>
+            <div class="card__body">
+              <h3>지속가능기술</h3>
+              <p>오래 쓸 수 있는 기술과 그 기술이 남기는 것</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 연락처 -->
+    <section class="band band--indigo" id="contact">
+      <div class="shell">
+        <p class="sect__num sect__num--on-dark">02 — CONTACT</p>
+        <h2 class="sect__title sect__title--on-dark">연락처</h2>
+
         <ul class="rows">
           <li>
             <span class="rows__key">Email</span>
@@ -39,12 +84,16 @@
             <a class="rows__val" href="https://github.com/yyyoon1021-oss">github.com/yyyoon1021-oss</a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <footer class="foot">
-        <p>&copy; 2026 윤예영</p>
-      </footer>
-    </article>
-  </div>
+  </main>
+
+  <footer class="foot">
+    <div class="shell">
+      <p>&copy; 2026 윤예영</p>
+    </div>
+  </footer>
+
 </body>
 </html>
